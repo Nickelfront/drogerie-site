@@ -1,0 +1,67 @@
+{
+    "data":[
+        {
+            "id":6,
+            "name": "Quatre En Rose",
+            "thumbnail":"/img/gallery/products/parfume-women-1.jpg",
+            "imgSrc":"/img/gallery/products/parfume-women-1.jpg",
+            "price": "58.50",
+            "shortDesc": "Нежността ще ви завладее",
+            "category":"parfumes-women",
+            "description":"<span class='big-first' >Д</span>амският парфюм Boucheron Quatre En Rose е нежен, изящен и чувствен аромат. Обаятелната му парфюмна композиция, започва с топ нотки от артемизия, мандарина и касис. Сърцевината му е изпълнена с роза, просковени цветчета и жасмин, а основата е изградена от ветивер, пачули и мускус. Дамският парфюм Boucheron Quatre En Rose е дело на парфюмера Куентин Биш и лансиран през 2018 година.",
+            "detailed": [
+                {
+                    "name":"Обем",
+                    "measure":"50 мл"
+                },
+                {
+                    "name":"Марка",
+                    "measure":"BOUCHERON"
+                }
+            ]
+        },
+        {
+            "id":5,
+            "name": "Calvin Klein Reveal EDP",
+            "thumbnail":"/img/gallery/products/parfume-women-2.jpg",
+            "imgSrc":"/img/gallery/products/parfume-women-2.jpg",
+            "price": "44.70",
+            "shortDesc": "Calvin Klein edition",
+            "description":"<span class='big-first' >C</span>alvin Klein Reveal излиза през септември 2014г. Reveal е  чувствен ориенталски аромат на слънце и морска сол. Съставът е разработен от парфюмеристите Jean-Marc Chaillan и Бруно Йованович. Ароматът е съчетание от сол, бял и черен пипер, а в сърцевината на прахообразни ирис и амбра. Богат и чувствен този аромат на сандалово дърво и основата заедно с ветивер, сандалово дърво, кашмир и мускус.",
+            "category":"parfumes-women",
+            "detailed": [
+                {
+                    "name":"Обем",
+                    "measure":"30 мл"
+                },
+                {
+                    "name":"Марка",
+                    "measure":"Calvin Klein"
+                }
+            ]
+        },
+        {
+            "id":13,
+            "name": " La Rive Swarovski",
+            "thumbnail":"/img/gallery/products/parfume-women-3.jpg",
+            "imgSrc":"/img/gallery/products/parfume-women-3.jpg",
+            "price": "58.80",
+            "shortDesc": "Парфюмна вода за жени La Rive Swarovski",
+            "category":"parfumes-women",
+            "description":"<span class='big-first' >П</span>арфюмна вода за жени La Rive Swarovski",
+            "detailed": [
+                {
+                    "name":"Обем",
+                    "measure":"60ml"
+                },
+                {
+                    "name":"Марка",
+                    "measure":" La Rivе"
+                }
+            ]
+        }
+    ],
+    "meta":{
+        "title": "Дамски парфюми"
+    }
+}

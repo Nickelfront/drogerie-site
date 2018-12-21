@@ -1,0 +1,110 @@
+<div class="container">
+	<h4 class="line-through text-center" style="font-size: 1.35em;">ЗАЯВЛЕНИЕ ЗА ПРИСЪЕДИНЯВАНЕ КЪМ ПРОГРАМАТА ЗА ЛОЯЛНИ КЛИЕНТИ</h4>
+	<div class="text-center">
+		<br>
+		<img class="img-responsive img-center" src="/img/loyalty/lilly-loyalty-header.jpg" style="width: 35%;">
+		<p style="margin-top: 15px; font-size: 1.10em;"><em>Спестете пари, като пазарувате при нас. Всяко „ЦВЕТЕНЦЕ“ ви спестява 1 стотинка.</em></p>
+	</div>
+	<div class="sign-up row">
+		<form>
+<!-- 			<div class="col-md-4">
+				<img class="img-responsive middle" src="/img/lilly-loyalty-header.jpg">
+			</div> -->
+			<div class="form-group col-md-4">
+
+				<label>Име<span class="required">*</span>:</label>
+				<br><input type="text" name="client-name"><br>
+				<label>Презиме:</label>
+				<br><input type="text" name="client-fathername"><br>
+				<label>Фамилия<span class="required">*</span>:</label>
+				<br><input type="text" name="client-surname"><br>
+				
+				<div class="form-group radios">
+				<label>Пол<span class="required">*</span>:&nbsp;</label>
+					<div class="radio-inline">
+						<input type="radio" name="gender" value="male">Мъж
+					</div>
+					<div class="radio-inline">
+						<input type="radio" name="gender" value="female">Жена
+					</div>
+				</div>
+				<div class="form-group">
+					<label>Възраст<span class="required">*</span>:</label>
+						<select class="form-control">
+							<option>18-24</option>
+							<option>25-34</option>
+							<option>35-49</option>
+							<option>50-64</option>
+							<option>над 65</option>
+						</select>
+				</div>
+			</div>
+			<div class="form-group col-md-4">
+				<label>Град<span class="required">*</span>:</label>
+				<br><input type="text" name="client-city"><br>
+				<label>Телефон<span class="required">*</span>:</label>
+				<br><input type="text" name="client-phone"><br>
+				<label>E-mail<span class="required">*</span>:</label>
+				<br><input type="text" name="client-city">		
+			</div>
+			<div class="form-group col-md-4">
+				<label>Име на детето:</label>
+				<br><input type="text" name="client-child"><br>
+				<!-- <div class="dropdown"> -->
+					<label style="margin-top: 10px;">Месец на раждане:</label>
+					<select class="form-control">
+						<option>януари</option>
+						<option>февруари</option>
+						<option>март</option>
+						<option>април</option>
+						<option>май</option>
+						<option>юни</option>
+						<option>юли</option>
+						<option>август</option>
+						<option>септември</option>
+						<option>октомври</option>
+						<option>ноември</option>
+						<option>декември</option>
+					</select>
+					<br>
+					<label style="margin-top: 10px;">Година на раждане:</label>
+					<select class="form-control">
+						<option>2018</option>
+						<option>2017</option>
+						<option>2016</option>
+						<option>2015</option>
+					</select>
+				<!-- </div> -->
+			</div>
+		</form>
+	</div>
+
+	<div class="container form-group user-agreement">
+		<div class="checkbox">
+		  <input type="checkbox">
+		    <span class="required">*</span>Съгласен/а съм личните ми данни да бъдат обработвани с цел предоставяне на Карта за лоялни клиенти за магазините на Лили Дрогерие.
+		</div>
+		<div class="checkbox">
+		  <input type="checkbox">
+		    <span class="required">*</span>Съгласен/а съм данните ми като телефон и email да бъдат обработвани с цел получаване на директен маркетинг чрез SMS и електронни съобщения.
+		</div>
+	</div>
+	<div class="register text-center">
+		<button class="btn lilly-btn">Регистрация</button>
+	</div>
+</div>
+
+<script type="text/javascript">
+	var text = `Mamma&amp;Baby и Lilly Loyalty Club се обединиха!`;
+
+	let popup = new SimplePopup('/components/popup', {
+		TITLE: text,
+		Content: `<p>&nbsp;Скъпи приятели,</p>
+<p>Искаме да ви съобщим, че програмата Mamma&amp;Baby Club се обединява с Lilly Loyalty Club. Вече можете да използвате вашата карта Lilly Club, за да се възползвате и от специалните промоции за вас и вашето мъниче от Mamma&amp;Baby Club.</p>
+<p>Mamma&amp;Baby Club е програма, специално създадена за най-малките и техните родители, в рамките на която всеки месец членовете могат да се възползват от различни промоционални активности на продукти за бебето. В нея могат да се включат всички семейства с деца до 3-годишна възраст.</p>`
+		IMAGE_PATH: "/img/loyalty/mamma-n-baby.jpg"
+	});
+
+	popup.make();
+	popup.render();
+</script>

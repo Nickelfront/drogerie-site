@@ -1,0 +1,25 @@
+{
+    "products": [
+        {
+            "imgSrc":"/img/gallery/products/balsam-1.jpg",
+            "name": "Биодерма атодерма интензив",
+            "price": "36.90",
+            "redirect": "/products/balsams/1"
+        }, {
+            "imgSrc":"/img/gallery/products/eye-liner-2.jpg",
+            "name": "IMPALA Очна линия 506",
+            "price": "2.90",
+            "redirect": "/products/eye-liners/500321"
+        }, {
+            "imgSrc":"/img/gallery/products/shampoo-33.jpg",
+            "name": "Love 2 Mix",
+            "price": 6.22,
+            "redirect": "/products/shampoos/33"
+        }, {
+            "imgSrc":"/img/gallery/products/hand-cream-3.jpg",
+            "name": "VIAN Perfect PNP",
+            "price": "17.23",
+            "redirect": "/products/hand-creams/67"
+        }
+    ]
+}

@@ -1,0 +1,10 @@
+/* @font-face kit by Fonts2u (http://www.fonts2u.com) */ 
+@font-face {
+	font-family:"Avdira Italic";
+	src:url("Avdira_I.eot?") format("eot"),
+	url("Avdira_I.woff") format("woff"),
+	url("Avdira_I.ttf") format("truetype"),
+	url("Avdira_I.svg#AvdiraItalic") format("svg");
+	font-weight:normal;
+	font-style:normal;
+}

@@ -1,0 +1,75 @@
+<div class="row">
+	<div class="col-xs-12">
+		<div class="nv-slider">
+			<div data-bi-slider="main"></div>
+			<div data-bi-slider="prev"></div>
+			<div data-bi-slider="next"></div>
+		</div>
+	</div>
+</div>
+
+<section class="container products">
+	<div class="row">
+		<div class="choice col-md-12">
+			<h3 class="line-through text-center">Популярни</h3>
+		</div>
+	</div>
+	<div class="row text-center">
+		<div data-bi-for="products">
+			<a _href="@|redirect|@">
+				<div class="col-md-3 col-xs-12">
+					<img class="img-responsive" src="@|imgSrc|@">
+					<h5 class="product-title text-center">@|name|@</h5>
+					<p class="price text-center">@|price|@</p>
+				</div>
+			</a>
+		</div>
+	</div>
+</section>
+
+<section class="container-fluid link-banner row">
+	<div class="image-banner col-md-6 col-xs-6">
+		<img src="/img/loyalty/lilly-mama-and-baby-club.jpg" class="img-responsive">
+	</div>
+	<div class="col-md-6 col-xs-6">
+		<div class="text-banner" >
+			<h2 class="text-uppercase">MAMMA&amp;BABY CLUB</h2>
+			<p><em>По-лесно пазаруване за всички необходими бебешки продукти!</em></p>
+			<p></p>
+			<a _href="/mb-conditions" class="btn lilly-btn">Виж повече</a>
+		</div>
+	</div>
+</section>
+<section class="container-fluid link-banner row">
+	<div class="col-md-6 col-xs-6">
+		<div class="text-banner pull-right">
+			<p><em>Зарадвайте любимия човек с</em></p>
+			<h2 class="text-uppercase">ваучер за подарък</h2>
+			<a _href="/gift-card" class="btn lilly-btn">Виж повече</a>
+		</div>
+	</div>
+	<div class="image-banner col-md-6 col-xs-6">
+		<img src="/img/gift-card.jpg" class="img-responsive pull-right">
+	</div>
+</section>
+
+<section class="container">
+	<div class="row">
+		<div class="brands text-center flexed">
+			<h4 class="line-through item-full">Нашите марки</h4>
+			<div data-bi-for="brands">
+				<img class="item-3 img-responsive col-xs-4" src="@|imgSrc|@" alt="@|name|@">
+				
+			</div>
+		</div>
+	</div>
+</section>
+<section class="container subscribe">
+	<img class="img-responsive" src="/img/banner/54587690159678.jpg">
+	<div class="content pull-right">
+		<h2>Абонирай се за Lilly Drogerie!</h2>
+		<p>Не пропускай нашите промоции и нови попълнения!</p>
+		<input type="text" name="subscribe-email" placeholder="Вашият e-mail...">
+		<button class="btn lilly-btn">Запиши ме!</button>
+	</div>
+</section>

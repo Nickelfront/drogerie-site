@@ -1,0 +1,31 @@
+<div class="blog-post-header text-center">
+    <p class="text-muted">@|created_at|@</p>
+    <h2 class="bold">@|title|@</h2>
+    <p class="text-muted">Автор : @|author|@</p>
+</div>
+<hr>
+<div class="blog-post-body">
+    <img src="@|thumbnail|@" class="img-responsive push-down full" alt="">
+    <p class="push-up">@|content|@</p>
+</div>
+<div class="blog-post-footer">
+    <h3 class="line-through text-center">Коментари</h3>
+    <form action="get">
+        <div class="form-goup push-up">
+            <label for="name">Име</label>
+            <input type="text" id="name" placeholder="" class="form-control">
+        </div>
+        <div class="form-goup push-up">
+            <label for="email">Е-mail<span class="required">*</span>:</label>
+            <input type="text" id="email" placeholder="name@mail.com" class="form-control">
+        </div>
+        <div class="form-goup push-up">
+            <label for="comment">Коментар</label>
+            <textarea name="comment" id="comment" placeholder="Оставете своя коментар тук..." class="form-control"></textarea>
+        </div>
+        <div class="form-group text-center">
+            <button class="btn lilly-btn">Коментирай</button>
+        </div>
+    </form>
+
+</div>

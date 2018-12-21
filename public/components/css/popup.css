@@ -1,0 +1,49 @@
+.popup-container {
+	padding: 25px;
+	width: 50%;
+	/*border-radius: 5px;*/
+	background: white;
+
+	-moz-box-shadow: 0 0 5px #ccc;
+	-webkit-box-shadow: 0 0 5px #ccc;
+	box-shadow: 0 0 5px #ccc;
+
+	position: relative;
+	top: 15%;
+	margin: 0 auto;
+	
+	border-radius: 6px;
+}
+
+.cls-button {
+	text-align: right;
+}
+
+
+.catalogue-container img {
+	border-radius: 8px;
+	/*margin-left: 40px;*/
+	max-width: 80%;
+    height: auto;
+}
+
+.popup-text {
+	float: left;
+}
+
+.catalogue-container {
+	/*display: flex;*/
+	/*float: right;*/
+	width: 80%;
+  /*background-color: white;*/
+  /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+  /*margin-bottom: 25px;*/
+	/*padding: 10px 20px;
+	/*text-align: center;*/
+}
+
+.get-catalogue, .cls-btn {
+	background-color: transparent;
+	border: none;
+}
+
