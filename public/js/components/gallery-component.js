@@ -1,6 +1,6 @@
 export class GalleryComponent extends Component {
     constructor() {
-		super();
+        super();
 		this.meta = {
             title: "Галерия | Lilly Drogerie",
             keywords: "галерия, снимки, lilly магазин, лили магазин, лили галерия",
@@ -14,10 +14,7 @@ export class GalleryComponent extends Component {
 		    	},
 		    	{
 		    		imgSrc: "../img/gallery/78786017042067.jpg"
-		    	},
-		    	{
-		    		imgSrc: "../img/gallery/53196174858344.jpg"
-		    	},
+		    	},	
 		    	{
 		    		imgSrc: "../img/gallery/82662941763798.jpg"
 		    	},
@@ -35,7 +32,9 @@ export class GalleryComponent extends Component {
 		    	},
 		    	{
 		    		imgSrc: "../img/gallery/81558973424964.jpg"
-		    	}
+		    	},{
+		    		imgSrc: "../img/gallery/53196174858344.jpg"
+		    	},
     		]
     	}
     }
@@ -54,10 +53,10 @@ export class GalleryComponent extends Component {
         prevButton.addEventListener("click", this.goToPrev.bind(this));
         nextButton.addEventListener("click", this.goToNext.bind(this));
         closeButton.addEventListener("click", this.closeView.bind(this));
-
     }
 
     handle() {
+        
         this.make();
     }
 
