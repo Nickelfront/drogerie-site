@@ -801,7 +801,21 @@ div.recent p{
 
   }
   section.link-banner {
-    padding: 11% 8% 13% 55%;
+    /* padding: 11% 8% 13% 55%; */
+  }
+  .md-hidden{
+    display: none;
+  }
+  .container.subscribe .content{
+    text-align: center;
+    position: relative;
+    width: 100%;
+    top: 0;
+    right: 0;
+  }
+  .container.subscribe .content h2, 
+  .container.subscribe .content p{
+    color: #4c4c4c;
   }
 }
 
