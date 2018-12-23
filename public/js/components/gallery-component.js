@@ -1,3 +1,5 @@
+import NvHttp from "../nv-http-loader.bundle";
+
 export class GalleryComponent extends Component {
     constructor() {
         super();
@@ -7,35 +9,11 @@ export class GalleryComponent extends Component {
             description: "Вижте нашият магазин и нашите усмихнати служители...",
         }
         this.template = '/components/gallery';
+        this.api = new NvHttp();
+        this.api.setEndpoint(`${window.location.origin}/common/gallery-pictures.json`);
+
 	    this.componentVariables = {
-    		images: [
-	    		{
-		    		imgSrc: "../img/gallery/81989610112375.jpg"
-		    	},
-		    	{
-		    		imgSrc: "../img/gallery/78786017042067.jpg"
-		    	},	
-		    	{
-		    		imgSrc: "../img/gallery/82662941763798.jpg"
-		    	},
-		    	{
-		    		imgSrc: "../img/gallery/52290490021308.jpg"
-		    	},
-		    	{
-		    		imgSrc: "../img/gallery/87678898539808.jpg"
-		    	},
-		    	{
-		    		imgSrc: "../img/gallery/78376450762152.jpg"
-		    	},
-		    	{
-		    		imgSrc: "../img/gallery/56351835860146.jpg"
-		    	},
-		    	{
-		    		imgSrc: "../img/gallery/81558973424964.jpg"
-		    	},{
-		    		imgSrc: "../img/gallery/53196174858344.jpg"
-		    	},
-    		]
+    		
     	}
     }
 
@@ -56,8 +34,12 @@ export class GalleryComponent extends Component {
     }
 
     handle() {
-        
-        this.make();
+        this.api.get().then(response=>{
+            if(response.hasOwnProperty("images")){
+                this.componentVariables = response;
+                this.make();
+            }
+        });
     }
 
     viewFullImage(event) {
