@@ -72,6 +72,11 @@ h1,h2,h3,h4,h5{
   font-weight: bold;
 }
 
+header {
+  background-color: #fff;
+  z-index: 9998;
+}
+
 h1.line-through {
   margin-bottom: 25px;
 }
@@ -85,6 +90,10 @@ h1.line-through {
 
 .reset-boldness {
   font-weight: normal;
+}
+
+.no-scroll {
+  overflow-x: hidden;
 }
 
 #back-to-top {
@@ -122,11 +131,12 @@ h1.line-through {
   color: #0a97d5;
 }
 
-.glyphicon-menu-down {
+.glyphicon-menu-down, .glyphicon-menu-right {
   font-size:0.7em;
+  color: #0a97d5;
 }
 
-nav {
+.desktop {
   position: relative;
   margin-top: 15px;
   margin-bottom: 15px;
@@ -134,7 +144,7 @@ nav {
   /*border: 1px solid black;*/
 }
 
-nav ul {
+.desktop ul {
   margin-bottom: 0!important;
 }
 
@@ -146,7 +156,7 @@ nav li.menu-item > a {
   text-decoration: none;
 }
 
-nav li.menu-item > a:before {
+.desktop li.menu-item > a:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -161,7 +171,7 @@ nav li.menu-item > a:before {
   transition: all 0.3s ease-in-out 0s;
 }
 
-nav li.menu-item > a:hover:before {
+.desktop li.menu-item > a:hover:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
@@ -233,6 +243,32 @@ nav li.menu-item > a:hover:before {
   cursor: pointer;
 }
 
+#hamburger {
+/*  margin-right: 25px;*/
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  z-index: 9999;
+  font-size: 1.5em;
+}
+
+.mobile {
+  background-color: #fff;
+  display: none;
+  position: absolute;
+  top: 0;
+  right: -800px;
+  transition: all 0.5s ease;
+  z-index: 9998;
+  width: 100%;
+}
+
+.mobile .menu-item {
+  border-bottom: 1px solid #aaa;
+  padding: 20px 0;
+  margin: 0 20px;
+}
 
 .products .row  {
   margin-top: 20px;
@@ -794,12 +830,22 @@ div.recent p{
 }
 
 @media screen and (max-width: 768px) {
+  header {
+    margin-top: 5px!important;
+    padding-top: 10px;
+    width: 100%;
+  }
   nav.desktop {
     display: none;
   }
   nav.mobile {
-
+    display: block;
   }
+
+  #hamburger {
+    display: block;
+  }
+
   section.link-banner {
     /* padding: 11% 8% 13% 55%; */
   }

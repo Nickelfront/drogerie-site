@@ -1,3 +1,5 @@
+		var mobileMenu = document.querySelector(".mobile");
+
 		window.onscroll = function() {
 			scrollFunction();
 		}
@@ -9,6 +11,7 @@
    		        document.getElementById("back-to-top").style.height = "45px";
    		        document.getElementById("back-to-top").style.fontSize = "18px";
    		        if (document.body.clientWidth < 768) {
+   		        	console.log("scrolling");
 					document.querySelector("header").style.position = "fixed";
 				}
 		    } else {
@@ -28,9 +31,7 @@
 		    document.documentElement.scrollTop = 0;
 		}
 
-		var mobileMenu = document.querySelector(".mobile");
-
-		document.getElementById("hamburger-menu").addEventListener("click", function () {
+		document.getElementById("hamburger").addEventListener("click", function () {
 			var header = document.querySelector("header");
 			if (mobileMenu.style.right == "-800px") {
 				// mobileMenu.style.display = "block";
@@ -41,7 +42,6 @@
 				mobileMenu.style.right = "-800px"
 				document.body.classList.remove("no-scroll");
 			}
-
 		});
 
 		document.querySelector(".mobile #loyal").addEventListener("click", function () {

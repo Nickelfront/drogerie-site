@@ -50,7 +50,8 @@
 		</div>
 		<div class="row">
 			<div class="col-md-8 col-xs-6"><a _href="/"><img src="/img/lilly/logo.gif"></a></div>
-			<div class="col-md-4 col-xs-6"><img class="img-responsive" id="slogan" src="/img/lilly/slogan-test.png"></div>
+			<div class="col-md-4"><img class="img-responsive" id="slogan" src="/img/lilly/slogan-test.png"></div>
+			<div id="hamburger" class="pull-right"><span class="blue glyphicon glyphicon-menu-hamburger"></span></div>
 		</div>
 
 		<nav class="row desktop">
@@ -129,7 +130,28 @@
 		</nav>
 		<hr>
 		<nav class="mobile">
-			
+			<div id="main">
+				<ul class="blue list-unstyled">
+					<li class="menu-item"><a _href="/">Начало</a></li>
+					<li class="menu-item"><a class="pointer">Продукти</a><span class="glyphicon glyphicon-menu-right"></span></li>
+					<li class="menu-item"><a class="pointer">Лоялна програма</a><span class="glyphicon glyphicon-menu-right"></span></li>
+					<li class="menu-item"><a _href="/shops">Магазини</a></li>
+					<li class="menu-item"><a _href="/blog">Блог</a></li>
+					<li class="menu-item"><a _href="/about-us">За нас</a></li>
+					<li class="menu-item"><a _href="/gallery">Галерия</a></li>
+					<li class="menu-item"><a _href="/contacts">Контакти</a></li>
+				</ul>
+			</div>
+			<div id="products">
+				<ul class="blue list-unstyled">
+					<li></li>
+				</ul>
+			</div>
+			<div id="loyal">
+				<ul class="blue list-unstyled">
+					<li></li>
+				</ul>
+			</div>
 		</nav>
 	</header>
 	<div data-bi-location="app">
@@ -171,7 +193,9 @@
 	</div>
 
 	<script src="/js/dist/app.bundle.js"></script>
-	<script type="text/javascript">
+	<script src="/js/main.js"></script>
+
+	<!-- <script type="text/javascript">
 
 
 		window.onscroll = function() {
@@ -198,7 +222,7 @@
 		    document.body.scrollTop = 0;
 		    document.documentElement.scrollTop = 0;
 		}
-	</script>
+	</script> -->
 </body>
 
 </html>
