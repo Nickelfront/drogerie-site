@@ -1,7 +1,6 @@
 .popup-container {
 	padding: 25px;
 	width: 50%;
-	/*border-radius: 5px;*/
 	background: white;
 
 	-moz-box-shadow: 0 0 5px #ccc;
@@ -18,7 +17,6 @@
 .cls-button {
 	text-align: right;
 }
-
 
 .catalogue-container img {
 	border-radius: 8px;
@@ -47,3 +45,12 @@
 	border: none;
 }
 
+@media screen  and (max-width: 768px) {
+	.img-responsive.img-thumbnail {
+		display: none;
+	}
+
+	.popup-container {
+		width: 95%;
+	}
+}

@@ -1,5 +1,5 @@
-		var mobileMenu = document.querySelector(".mobile");
-
+		var mobileMenu = document.querySelector(".mobile #main");
+		console.log(mobileMenu.style);
 		window.onscroll = function() {
 			scrollFunction();
 		}
@@ -11,7 +11,6 @@
    		        document.getElementById("back-to-top").style.height = "45px";
    		        document.getElementById("back-to-top").style.fontSize = "18px";
    		        if (document.body.clientWidth < 768) {
-   		        	console.log("scrolling");
 					document.querySelector("header").style.position = "fixed";
 				}
 		    } else {
@@ -32,7 +31,11 @@
 		}
 
 		document.getElementById("hamburger").addEventListener("click", function () {
+			console.log("click");
 			var header = document.querySelector("header");
+			console.log(mobileMenu.style.right);
+			console.log(mobileMenu.style.display);
+			mobileMenu.style.display = "block";
 			if (mobileMenu.style.right == "-800px") {
 				// mobileMenu.style.display = "block";
 				mobileMenu.style.right = "0";
@@ -60,7 +63,7 @@
 
 		document.querySelectorAll(".mobile .menu-item a[_href]").forEach(function (menuItem) {
 			menuItem.addEventListener("click", function () {
-				document.querySelector(".mobile").style.display="none";
+				mobileMenu.style.right = "-800px";
 			});
 		});
 
