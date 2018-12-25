@@ -75,6 +75,7 @@ h1,h2,h3,h4,h5{
 header {
   background-color: #fff;
   z-index: 15;
+  position: relative;
 }
 
 h1.line-through {
@@ -842,7 +843,7 @@ div.recent p{
 
 @media screen and (max-width: 768px) {
   header {
-    margin-top: 5px!important;
+    /* margin-top: 5px!important; */
     padding-top: 10px;
     width: 100%;
   }
