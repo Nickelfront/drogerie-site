@@ -1,4 +1,5 @@
 import NvHttp from "../nv-http-loader.bundle";
+import {scrollToTop} from "../helpers";
 
 export class GalleryComponent extends Component {
     constructor() {
@@ -9,12 +10,8 @@ export class GalleryComponent extends Component {
             description: "Вижте нашият магазин и нашите усмихнати служители...",
         }
         this.template = '/components/gallery';
-        this.api = new NvHttp();
-        this.api.setEndpoint(`${window.location.origin}/common/gallery-pictures.json`);
-
-	    this.componentVariables = {
-    		
-    	}
+        this.api = new NvHttp(`${window.location.origin}/common/gallery-pictures.json`);
+	    this.componentVariables = {};
     }
 
     loaded() {
@@ -52,8 +49,9 @@ export class GalleryComponent extends Component {
     	// // fullSizeImg.src = imgSrc;
     	// fullScreenView.style.backgroundImage = "url(" + imgSrc + ")";
     	// document.querySelector('body').style.overflow = "hidden!important";
-    	// //TODO: ADD CONTROLS
-        
+        // //TODO: ADD CONTROLS
+        // scrollToTop();
+        document.querySelector('html').style.overflowY = "hidden";
         console.log(event.currentTarget);
         let allImages = document.querySelectorAll("img.thumbnail");
         
@@ -115,6 +113,7 @@ export class GalleryComponent extends Component {
     }
 
     closeView(event) {
+        document.querySelector('html').style.overflowY = "";
         document.querySelector(".image-fullscreen").style.display = "none";
     }
 }
