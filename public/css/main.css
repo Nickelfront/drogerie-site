@@ -244,21 +244,22 @@ nav li.menu-item > a {
 }
 
 #hamburger {
-/*  margin-right: 25px;*/
   display: none;
   position: absolute;
   top: 10px;
   right: 25px;
-  z-index: 15;
-  font-size: 1.5em;
+  z-index: 16;
+  font-size: 2em;
 }
 
 .mobile {
+  background-color: #fff;
   display: none;
   /*top: 0;*/
   /*right: -800px;*/
 }
-.mobile #main {
+.mobile #main, .mobile #loyal-menu, .mobile #products-menu {
+  /*display: none;*/
   background-color: #fff;
   position: absolute;
   top: 0;
@@ -266,6 +267,14 @@ nav li.menu-item > a {
   z-index: 15;
   width: 100%;
   transition: all 0.5s ease;
+}
+
+.mobile #loyal-menu {
+
+}
+
+.mobile #products-menu {
+
 }
 
 .mobile .menu-item {
@@ -843,7 +852,7 @@ div.recent p{
     display: none;
   }
   nav.mobile {
-    /*display: block;*/
+    display: block;
   }
 
   #hamburger {
