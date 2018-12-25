@@ -22,10 +22,6 @@ export class HomeComponent extends Component {
                     name: "LLUMS",
                 }
                 , {
-                    imgSrc: "./img/brand/velnea.png",
-                    name: "velnea",
-                }
-                , {
                     imgSrc: "./img/brand/watte-watte.svg",
                     name: "watte-watte",
                 }

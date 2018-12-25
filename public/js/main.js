@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function 	() {
 	var header = document.querySelector("header");
 
 	window.onscroll = function () {
