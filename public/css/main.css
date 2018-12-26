@@ -864,6 +864,10 @@ div.recent p{
     display: block;
     width: 100%;
     border: 2px solid #0a97d5;
+    border-radius: 5px;
+  }
+  #hamburger.opened span{
+    border-radius: 50%;
   }
 
   #hamburger .top-ham{

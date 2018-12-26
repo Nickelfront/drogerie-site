@@ -1,3 +1,5 @@
+import {scrollToTop} from "../helpers";
+
 export class ProductsComponent extends Component {
     constructor(router) {
         super();
@@ -11,6 +13,7 @@ export class ProductsComponent extends Component {
     }
     loaded(){
         this.router.attachListener('.products-handler');
+        scrollToTop();
     }
     handle(){
         this.make();

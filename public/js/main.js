@@ -99,8 +99,10 @@ document.addEventListener("DOMContentLoaded", function 	() {
 	});
 
 	document.querySelectorAll(".mobile .menu-item a[_href]").forEach(function (menuItem) {
+		let ham = document.querySelector("#hamburger");
 		menuItem.addEventListener("click", function () {
 			mobileMenu.style.right = "-800px";
+			ham.classList.remove('opened');
 		});
 	});
 	// --- end of mobile specific script ---
