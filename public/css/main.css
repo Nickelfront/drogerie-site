@@ -856,7 +856,39 @@ div.recent p{
 
   #hamburger {
     display: block;
+    width: 35px;
   }
+  #hamburger span{
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    display: block;
+    width: 100%;
+    border: 2px solid #0a97d5;
+  }
+
+  #hamburger .top-ham{
+    top:0px;
+  }
+  #hamburger .bottom-ham{
+    top:20px;
+  }
+  #hamburger .middle-ham{
+    top:10px;
+  }
+
+  #hamburger.opened .top-ham{
+    top:10px;
+    transform: rotateZ(45deg);
+  }
+  #hamburger.opened .bottom-ham{
+    top:10px;
+    transform: rotateZ(-45deg); 
+  }
+  #hamburger.opened .middle-ham{
+    top:10px;
+    transform: rotateZ(-45deg); 
+  }
+
 
   section.link-banner {
     /* padding: 11% 8% 13% 55%; */

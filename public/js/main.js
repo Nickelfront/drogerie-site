@@ -50,15 +50,17 @@ document.addEventListener("DOMContentLoaded", function 	() {
 	mobileProductsMenu.style.zIndex = "20";
 	mobileLoyalMenu.style.zIndex = "20";
 
-	document.getElementById("hamburger").addEventListener("click", function () {
+	document.getElementById("hamburger").addEventListener("click", function (e) {
 		var header = document.querySelector("header");
 		mobileMenu.style.display = "block";
 		if (mobileMenu.style.right == "-800px") {
 			mobileMenu.style.right = "0";
 			document.body.classList.add("no-scroll");
+			e.currentTarget.classList.add("opened");
 		} else {
 			mobileMenu.style.right = "-800px";
 			// doesnt work:
+			e.currentTarget.classList.remove("opened");
 			document.body.classList.remove("no-scroll");
 		}
 	});
