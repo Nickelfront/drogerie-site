@@ -22,10 +22,6 @@ export class HomeComponent extends Component {
                     name: "LLUMS",
                 }
                 , {
-                    imgSrc: "./img/brand/velnea.png",
-                    name: "velnea",
-                }
-                , {
                     imgSrc: "./img/brand/watte-watte.svg",
                     name: "watte-watte",
                 }
@@ -62,10 +58,10 @@ export class HomeComponent extends Component {
             this.popUp.render();
         } catch (e) { console.table(['NICKIE IS A DUMMY']) }
 
-        const slider = new NvSlider({ slices: 6, height: "450px" });
+        const slider = new NvSlider({ slices: 6, height: "405px" });
         slider.loadImages([
+            '../img/banner/sp-1.jpg',
             '../img/banner/lavender-oil.jpg',
-            'https://i.ytimg.com/vi/WZerlq1RYUQ/maxresdefault.jpg',
             '../img/banner/make-up-kit.jpg'
         ])
         slider.ini();

@@ -1,43 +1,17 @@
+import NvHttp from "../nv-http-loader.bundle";
+import {scrollToTop} from "../helpers";
+
 export class GalleryComponent extends Component {
     constructor() {
-		super();
+        super();
 		this.meta = {
             title: "Галерия | Lilly Drogerie",
             keywords: "галерия, снимки, lilly магазин, лили магазин, лили галерия",
             description: "Вижте нашият магазин и нашите усмихнати служители...",
         }
         this.template = '/components/gallery';
-	    this.componentVariables = {
-    		images: [
-	    		{
-		    		imgSrc: "../img/gallery/81989610112375.jpg"
-		    	},
-		    	{
-		    		imgSrc: "../img/gallery/78786017042067.jpg"
-		    	},
-		    	{
-		    		imgSrc: "../img/gallery/53196174858344.jpg"
-		    	},
-		    	{
-		    		imgSrc: "../img/gallery/82662941763798.jpg"
-		    	},
-		    	{
-		    		imgSrc: "../img/gallery/52290490021308.jpg"
-		    	},
-		    	{
-		    		imgSrc: "../img/gallery/87678898539808.jpg"
-		    	},
-		    	{
-		    		imgSrc: "../img/gallery/78376450762152.jpg"
-		    	},
-		    	{
-		    		imgSrc: "../img/gallery/56351835860146.jpg"
-		    	},
-		    	{
-		    		imgSrc: "../img/gallery/81558973424964.jpg"
-		    	}
-    		]
-    	}
+        this.api = new NvHttp(`${window.location.origin}/common/gallery-pictures.json`);
+	    this.componentVariables = {};
     }
 
     loaded() {
@@ -54,11 +28,15 @@ export class GalleryComponent extends Component {
         prevButton.addEventListener("click", this.goToPrev.bind(this));
         nextButton.addEventListener("click", this.goToNext.bind(this));
         closeButton.addEventListener("click", this.closeView.bind(this));
-
     }
 
     handle() {
-        this.make();
+        this.api.get().then(response=>{
+            if(response.hasOwnProperty("images")){
+                this.componentVariables = response;
+                this.make();
+            }
+        });
     }
 
     viewFullImage(event) {
@@ -71,8 +49,9 @@ export class GalleryComponent extends Component {
     	// // fullSizeImg.src = imgSrc;
     	// fullScreenView.style.backgroundImage = "url(" + imgSrc + ")";
     	// document.querySelector('body').style.overflow = "hidden!important";
-    	// //TODO: ADD CONTROLS
-        
+        // //TODO: ADD CONTROLS
+        // scrollToTop();
+        document.querySelector('html').style.overflowY = "hidden";
         console.log(event.currentTarget);
         let allImages = document.querySelectorAll("img.thumbnail");
         
@@ -134,6 +113,7 @@ export class GalleryComponent extends Component {
     }
 
     closeView(event) {
+        document.querySelector('html').style.overflowY = "";
         document.querySelector(".image-fullscreen").style.display = "none";
     }
 }

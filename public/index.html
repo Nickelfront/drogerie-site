@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Lilly Drogerie: Начало</title>
+	<title>Lilly Drogerie</title>
 	<meta name="keywords" content="">
 	<meta name="description" content="">
 
@@ -50,7 +50,13 @@
 		</div>
 		<div class="row">
 			<div class="col-md-8 col-xs-6"><a _href="/"><img src="/img/lilly/logo.gif"></a></div>
-			<div class="col-md-4 col-xs-6"><img class="img-responsive" id="slogan" src="/img/lilly/slogan-test.png"></div>
+			<div class="col-md-4"><img class="img-responsive" id="slogan" src="/img/lilly/slogan-test.png"></div>
+			<div id="hamburger" class="pull-right">
+				<span class="top-ham"></span>
+				<span class="middle-ham"></span>
+				<span class="bottom-ham"></span>
+				<!-- <span class="blue glyphicon glyphicon-menu-hamburger"></span> -->
+			</div>
 		</div>
 
 		<nav class="row desktop">
@@ -129,7 +135,30 @@
 		</nav>
 		<hr>
 		<nav class="mobile">
-			
+			<div id="main">
+				<ul class="blue list-unstyled">
+					<li class="menu-item"><a _href="/">Начало</a></li>
+					<li class="menu-item"><a id="products-mobile" class="pointer">Продукти</a>&nbsp;<span class="glyphicon glyphicon-menu-right"></span></li>
+					<li class="menu-item"><a id="loyal-mobile" class="pointer">Лоялна програма</a>&nbsp;<span class="glyphicon glyphicon-menu-right"></span></li>
+					<li class="menu-item"><a _href="/shops">Магазини</a></li>
+					<li class="menu-item"><a _href="/blog">Блог</a></li>
+					<li class="menu-item"><a _href="/about-us">За нас</a></li>
+					<li class="menu-item"><a _href="/gallery">Галерия</a></li>
+					<li class="menu-item"><a _href="/contacts">Контакти</a></li>
+				</ul>
+			</div>
+			<div id="products-menu">
+				<ul class="blue list-unstyled">
+					<li class="menu-item"><a id="back-to-main">Back</a></li>
+					<li class="menu-item">PRODUCTS LINKS HERE</li>
+				</ul>
+			</div>
+			<div id="loyal-menu">
+				<ul class="blue list-unstyled">
+					<li class="menu-item" id="back-to-main"><a>Back</a></li>
+					<li class="menu-item">LOYAL LINKS HERE</li>
+				</ul>
+			</div>
 		</nav>
 	</header>
 	<div data-bi-location="app">
@@ -171,34 +200,7 @@
 	</div>
 
 	<script src="/js/dist/app.bundle.js"></script>
-	<script type="text/javascript">
-
-
-		window.onscroll = function() {
-			scrollFunction()
-		};
-
-		function scrollFunction() {
-		    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-		        document.getElementById("back-to-top").style.bottom = "20px";
-   		        document.getElementById("back-to-top").style.width = "45px";
-   		        document.getElementById("back-to-top").style.height = "45px";
-   		        document.getElementById("back-to-top").style.fontSize = "18px";
-		    } else {
-		        document.getElementById("back-to-top").style.bottom = "-100px";
-		        document.getElementById("back-to-top").style.width = "0px";
-   		        document.getElementById("back-to-top").style.height = "0px";
-   		        document.getElementById("back-to-top").style.fontSize = "0px";
-
-		    }
-		}
-
-		// When the user clicks on the button, scroll to the top of the document
-		function topFunction() {
-		    document.body.scrollTop = 0;
-		    document.documentElement.scrollTop = 0;
-		}
-	</script>
+	<script src="/js/main.js"></script>
 </body>
 
 </html>
