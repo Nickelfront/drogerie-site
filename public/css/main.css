@@ -132,9 +132,12 @@ h1.line-through {
   color: #0a97d5;
 }
 
-.glyphicon-menu-down, .glyphicon-menu-right {
+.glyphicon-menu-down, .glyphicon-menu-right, .glyphicon-menu-left {
   font-size:0.7em;
   color: #0a97d5;
+}
+.glyphicon-menu-left{
+  font-size: 0.8em;
 }
 
 .desktop {
@@ -147,6 +150,15 @@ h1.line-through {
 
 .desktop ul {
   margin-bottom: 0!important;
+}
+nav .list-grouped .menu-group-header>h4{
+  font-size: 1.02em;
+}
+nav .list-grouped .menu-group-header  {
+  padding:3px 0;
+}
+nav .list-grouped .menu-group-item  {
+  padding:6px 20px;
 }
 
 nav li.menu-item > a {
