@@ -5,11 +5,13 @@ export class BlogComponent extends Component {
         super();
         this.router = router;
         this.api = new NvHttp(`${window.location.origin}/common/blog-posts.json`);
-        this.meta = {
+        this.defaultMeta = {
             title: "Блог | Lilly Drogerie",
             keywords: "актуално, блог, постове, най-популярни техники",
             description: "Разгледайте нашите най-нови статии от проверени източници...",
         };
+
+        this.meta = this.defaultMeta;
 
         this.componentVariables = {};
     }
@@ -35,15 +37,17 @@ export class BlogComponent extends Component {
     showInner(id) {
         this.setContainer('blog');
         this.template = '/components/blog/blog-inner';
-        this.api.get().then(response=>{
+        this.api.get().then(response => {
             if (response.hasOwnProperty('posts')) {
-                const postExist = response['posts'].some(post=>{
-                    if(post.id == id){
+                const postExist = response['posts'].some(post => {
+                    if (post.id == id) {
                         this.componentVariables = post;
+                        this.meta = (post.hasOwnProperty("meta")) ? post.meta : this.defaultMeta;
+
                         return true;
                     }
                 });
-                (postExist)?this.make():this.router.updateState('not-found');
+                (postExist) ? this.make() : this.router.updateState('not-found');
             }
         });
     }
