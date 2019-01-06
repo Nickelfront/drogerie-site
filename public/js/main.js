@@ -138,10 +138,21 @@ document.addEventListener("DOMContentLoaded", function 	() {
 		});
 	});
 
-	//Search option - questionable
-	// document.querySelector(".glyphicon-search").addEventListener("click", function () {
-	// 	var searchBox = document.querySelector("#search-box");
-	// 	searchBox.style.display = "block";//TODO : Hide when clicked elsewhere
-	// 	searchBox.style.width = "150px";
-	// });
-})
+	var searchBox = document.querySelector("#search-box");
+
+	document.addEventListener('click', function (event) {
+		if (!(event.target.matches("#search-box") || event.target.matches(".glyphicon-search"))) {
+			if (searchBox.style.width == "100%") {
+				searchBox.style.width = "0";
+				searchBox.style.opacity = "0";
+			}
+		};
+	});
+	
+	document.querySelector(".glyphicon-search").addEventListener("click", function (e) {
+		if (searchBox.style.width != "100%") {
+			searchBox.style.width = "100%";
+			searchBox.style.opacity = "1";
+		}
+	});
+});
