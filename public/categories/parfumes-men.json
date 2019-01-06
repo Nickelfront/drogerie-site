@@ -18,7 +18,12 @@
                     "name":"Марка",
                     "measure":"Adidas"
                 }
-            ]
+            ],
+            "meta":{
+                "title": "UEFA Champions League Arena Edition | Lilly Drogerie",
+                "keywords": "парфюм, мъжки, арена, лига, шампионска",
+                "description": "Парфюмът се състои от няколко компонента водно-алкохолен разтвор..."
+            }
         },
         {
             "id":5,
@@ -38,7 +43,12 @@
                     "name":"Марка",
                     "measure":"Etienne"
                 }
-            ]
+            ],
+            "meta":{
+                "title": "Etienne Aigner Aigner | Lilly Drogerie",
+                "keywords": "парфюм, мъжки, limited, platinum, edition",
+                "description": "...е квинтесенция на лукс, изисканост и вкус в превод от езика на ароматите..."
+            }
         },
         {
             "id":13,
@@ -58,7 +68,12 @@
                     "name":"Марка",
                     "measure":"Hermes"
                 }
-            ]
+            ],
+            "meta":{
+                "title": "Hermes Terre d`Hermes | Lilly Drogerie",
+                "keywords": "парфюм, мъжки, аромат, hermes",
+                "description": "...неповторим мъжки аромат, който ще остане за дълго в съзнанието..."
+            }
         }
     ],
     "meta":{

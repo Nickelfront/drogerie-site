@@ -18,7 +18,12 @@
                     "name":"Марка",
                     "measure":"Биодерма"
                 }
-            ]
+            ],
+            "meta":{
+                "title": "Биодерма атодерма интензив | Lilly Drogerie",
+                "keywords": "балсам, биодерма, атодерма, интензив",
+                "description": "Atoderm Intensive Baume бързо спира сърбежа и намалява желанието за чесане....."
+            }
         },
         {
             "id":5,
@@ -38,7 +43,12 @@
                     "name":"Марка",
                     "measure":"Alberto"
                 }
-            ]
+            ],
+            "meta":{
+                "title": "Балсам Алберто | Lilly Drogerie",
+                "keywords": "балсам, алберто балсам, всички типове, коса, ободрява,косата",
+                "description": "Балсам за всички типове коса Alberto Balsam Tea Tree Tingle 350..."
+            }
         },
         {
             "id":13,
@@ -58,7 +68,12 @@
                     "name":"Марка",
                     "measure":"О`Revle"
                 }
-            ]
+            ],
+            "meta":{
+                "title": "Orevle Silk Балсам Омекотяващ | Lilly Drogerie",
+                "keywords": "балсам, orevle silk, балсам, омекотяващ, суха коса, ободрява,косата",
+                "description": "Суха,трудна за разресване и загубила блясъка си коса..."
+            }
         }
     ],
     "meta":{

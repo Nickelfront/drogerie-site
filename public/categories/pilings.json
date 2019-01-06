@@ -18,7 +18,12 @@
                     "name":"Марка",
                     "measure":"Diet Esthetic"
                 }
-            ]
+            ],
+            "meta":{
+                "title": "Diet Esthetic Beauty Purify | Lilly Drogerie",
+                "keywords": "пилинг, лице, маска, ексфолиал",
+                "description": "3 в 1 Beauty Purify представлява автентична комбинация от маска за лице..."
+            }
         },
         {
             "id":5,
@@ -38,7 +43,12 @@
                     "name":"Марка",
                     "measure":"Juman"
                 }
-            ]
+            ],
+            "meta":{
+                "title": "Пилинг маска за лице Juman | Lilly Drogerie",
+                "keywords": "пилинг, лице, маска, ексфолиал, juman",
+                "description": "Mаска, обогатена с минерали, които нежно отстраняват замърсявани..."
+            }
         },
         {
             "id":199,
@@ -58,7 +68,12 @@
                     "name":"Марка",
                     "measure":"DSM"
                 }
-            ]
+            ],
+            "meta":{
+                "title": "Пилинг сапун за тяло | Lilly Drogerie",
+                "keywords": "пилинг, тяло, маска, ексфолиал, тройно действие,почиства тялото",
+                "description": "Произведен по формула с тройно действие, която дълбоко почиства..."
+            }
         }
     ],
     "meta":{

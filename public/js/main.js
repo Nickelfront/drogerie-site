@@ -1,3 +1,9 @@
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+	document.body.scrollTop = 0;
+	document.documentElement.scrollTop = 0;
+}
+
 document.addEventListener("DOMContentLoaded", function 	() {
 	var header = document.querySelector("header");
 
@@ -30,13 +36,6 @@ document.addEventListener("DOMContentLoaded", function 	() {
 			}
 		}
 	}
-
-	// When the user clicks on the button, scroll to the top of the document
-	function topFunction() {
-		document.body.scrollTop = 0;
-		document.documentElement.scrollTop = 0;
-	}
-
 	// --- start of mobile specific script ---
 
 	var mobileMenu = document.querySelector(".mobile #main");
@@ -66,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function 	() {
 	});
 
 	document.getElementById("loyal-mobile").addEventListener("click", function () {
-		var backBtn = mobileLoyalMenu.querySelector("#back-to-main");
+		var backBtn = mobileLoyalMenu.querySelector(".back-to-main");
 		backBtn.addEventListener("click", function () {
 			mobileLoyalMenu.style.zIndex = "20";
 			mobileLoyalMenu.style.right = "-800px";
@@ -84,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function 	() {
 
 	document.getElementById("products-mobile").addEventListener("click", function () {
 		console.log("click");
-		var backBtn = mobileProductsMenu.querySelector("#back-to-main");
+		var backBtn = mobileProductsMenu.querySelector(".back-to-main");
 		backBtn.addEventListener("click", function () {
 			mobileProductsMenu.style.right = "-800px";
 			mobileMenu.style.right = "0";
@@ -102,6 +101,8 @@ document.addEventListener("DOMContentLoaded", function 	() {
 		let ham = document.querySelector("#hamburger");
 		menuItem.addEventListener("click", function () {
 			mobileMenu.style.right = "-800px";
+			mobileProductsMenu.style.right = "-800px";
+			mobileLoyalMenu.style.right = "-800px";
 			ham.classList.remove('opened');
 		});
 	});
@@ -137,10 +138,21 @@ document.addEventListener("DOMContentLoaded", function 	() {
 		});
 	});
 
-	//Search option - questionable
-	// document.querySelector(".glyphicon-search").addEventListener("click", function () {
-	// 	var searchBox = document.querySelector("#search-box");
-	// 	searchBox.style.display = "block";//TODO : Hide when clicked elsewhere
-	// 	searchBox.style.width = "150px";
-	// });
-})
+	var searchBox = document.querySelector("#search-box");
+
+	document.addEventListener('click', function (event) {
+		if (!(event.target.matches("#search-box") || event.target.matches(".glyphicon-search"))) {
+			if (searchBox.style.width == "100%") {
+				searchBox.style.width = "0";
+				searchBox.style.opacity = "0";
+			}
+		};
+	});
+	
+	document.querySelector(".glyphicon-search").addEventListener("click", function (e) {
+		if (searchBox.style.width != "100%") {
+			searchBox.style.width = "100%";
+			searchBox.style.opacity = "1";
+		}
+	});
+});

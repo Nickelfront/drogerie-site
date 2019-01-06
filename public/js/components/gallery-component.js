@@ -15,7 +15,7 @@ export class GalleryComponent extends Component {
     }
 
     loaded() {
-    	console.log("Loaded. Can write functions here.");
+    	// console.log("Loaded. Can write functions here.");
     	let images = document.querySelectorAll("img.thumbnail");
     	images.forEach(image => {
     		image.addEventListener("click", this.viewFullImage.bind(this));
@@ -52,7 +52,7 @@ export class GalleryComponent extends Component {
         // //TODO: ADD CONTROLS
         // scrollToTop();
         document.querySelector('html').style.overflowY = "hidden";
-        console.log(event.currentTarget);
+        // console.log(event.currentTarget);
         let allImages = document.querySelectorAll("img.thumbnail");
         
         let fullScreenView = document.querySelector(".image-fullscreen");
@@ -89,7 +89,7 @@ export class GalleryComponent extends Component {
                     event.currentTarget.style.display = "none";
                 }
                 currentImage.src = allImages[i-1].src;
-                console.log(i);
+                // console.log(i);
             }
         }
     }
@@ -106,7 +106,7 @@ export class GalleryComponent extends Component {
                     event.currentTarget.style.display = "none";
                 }
                 currentImage.src = allImages[i+1].src;
-                console.log(i);
+                // console.log(i);
                 break;
             }
         }

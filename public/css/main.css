@@ -132,9 +132,12 @@ h1.line-through {
   color: #0a97d5;
 }
 
-.glyphicon-menu-down, .glyphicon-menu-right {
+.glyphicon-menu-down, .glyphicon-menu-right, .glyphicon-menu-left {
   font-size:0.7em;
   color: #0a97d5;
+}
+.glyphicon-menu-left{
+  font-size: 0.8em;
 }
 
 .desktop {
@@ -146,7 +149,17 @@ h1.line-through {
 }
 
 .desktop ul {
+  margin-top: 7px;
   margin-bottom: 0!important;
+}
+nav .list-grouped .menu-group-header>h4{
+  font-size: 1.02em;
+}
+nav .list-grouped .menu-group-header  {
+  padding:3px 0;
+}
+nav .list-grouped .menu-group-item  {
+  padding:6px 20px;
 }
 
 nav li.menu-item > a {
@@ -241,6 +254,29 @@ nav li.menu-item > a {
 }
 
 .search {
+  position: relative;
+}
+
+#search-box {
+  width: 0;
+  margin: 0;
+  opacity: 0;
+  /*display: none;*/
+  border-radius: 20px;
+  /*border-color: white;*/
+    -moz-transition: width .5s, opacity .5s;
+    -ms-transition: width .5s, opacity .5s;
+    -o-transition: width .5s, opacity .5s;
+    -webkit-transition: width .5s, opacity .5s;
+    transition: width .5s, opacity .5s;
+}
+
+
+.glyphicon-search {
+  position: absolute;
+  right: 25px;
+  top: 10px;
+  margin-left: 10px;
   cursor: pointer;
 }
 
@@ -331,8 +367,6 @@ nav li.menu-item > a {
   margin-top: 20%;
   margin-left: 10%;
   padding-right: 10%;
-  /*margin-right: 15%;*/
-  /* width: 30%; */
 }
 
 .text-banner h2 {
@@ -372,7 +406,6 @@ nav li.menu-item > a {
   width: 20%;
   top: 60px;
   right: 10%;
-  /*bottom: 40%;*/
 }
 
 .subscribe .content h2, .subscribe .content p {
@@ -392,7 +425,6 @@ nav li.menu-item > a {
 }
 
 .subscribe img {
-  /*height: 450px;*/
   width: 100%;
 }
 
@@ -433,7 +465,7 @@ textarea {
 
 input:focus, textarea:focus {
   outline: none;
-  border-color: #0a97d5;
+  border-color: #0a97d5!important;
   box-shadow: 0 0 7px #0a97d5;
 }
 
@@ -448,7 +480,6 @@ input:focus, textarea:focus {
 .contact-details i {
   display: inline-block;
   float: left;
-  /*color: #fed419;*/
   color: white;
   padding-top: 15px;
   width: 60px;
@@ -486,6 +517,13 @@ input:focus, textarea:focus {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
 }
 
 .image-fullscreen .glyphicon {
@@ -524,7 +562,6 @@ input:focus, textarea:focus {
 }
 
 #image-prev, #image-next {
-  /*height: 100%;*/
   cursor: pointer;
   position: absolute;
   bottom: 50%;
@@ -553,8 +590,7 @@ input:focus, textarea:focus {
 }
 
 .conditions ol {
-   /*margin-top: 30px;*/
-   margin-left: 30px;
+  margin-left: 30px;
 }
 
 .user-agreement * {
@@ -828,8 +864,26 @@ div.recent p{
   }
 }
 
-.about p, .careers p, .policy p {
+.about p, .careers p, .policy p, .loyalty p, .mb-conditions p {
   word-break: break-word;
+  text-indent: 30px;
+}
+
+.loyalty ul, .mb-conditions ul {
+  padding-left: 40px;
+}
+
+.loyalty ol {
+  padding-left: 5px;
+}
+
+.careers .text {
+  -moz-column-count: 2;
+  -moz-column-gap: 40px;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 40px;
+  column-count: 2;
+  column-gap: 40px;
 }
 
 @media screen and (max-width: 991px) {
@@ -843,7 +897,6 @@ div.recent p{
 
 @media screen and (max-width: 768px) {
   header {
-    /* margin-top: 5px!important; */
     padding-top: 10px;
     width: 100%;
   }
@@ -989,12 +1042,12 @@ div.recent p{
   background: rgba(214, 214, 214,0.2);
 
 }
-.text-ellipsed
-{
-    white-space: nowrap; 
-    overflow: hidden;
-    text-overflow: ellipsis;
+.text-ellipsed {
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
+
 .text-dimmed{
   color:rgb(138, 136, 136);
 }

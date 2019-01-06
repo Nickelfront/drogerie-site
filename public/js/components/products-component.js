@@ -4,11 +4,12 @@ export class ProductsComponent extends Component {
     constructor(router) {
         super();
         this.router=router;
-        this.meta = {
+        this.defaultMeta = {
             title: "Продукти | Lilly Drogerie",
             keywords: "продукти, закупуване, лист от продукти, шампоани, балсами",
             description: "Вижте асортимента ни от най-различни продукти....",
         };
+        this.meta = this.defaultMeta;
         this.componentVariables = {};
     }
     loaded(){
@@ -33,5 +34,11 @@ export class ProductsComponent extends Component {
 
     setContent(data){
         this.componentVariables = data;
+        if(data.hasOwnProperty('meta')){
+            this.meta = data.meta;
+        }
+        else{
+            this.meta = this.defaultMeta;
+        }
     }
 }

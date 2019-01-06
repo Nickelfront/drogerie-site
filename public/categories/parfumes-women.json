@@ -18,7 +18,12 @@
                     "name":"Марка",
                     "measure":"BOUCHERON"
                 }
-            ]
+            ],
+            "meta":{
+                "title": "Quatre En Rose | Lilly Drogerie",
+                "keywords": "парфюм, женски, аромат, Quatre, rose",
+                "description": "...парфюм Boucheron Quatre En Rose е нежен, изящен и чувствен аромат..."
+            }
         },
         {
             "id":5,
@@ -38,11 +43,16 @@
                     "name":"Марка",
                     "measure":"Calvin Klein"
                 }
-            ]
+            ],
+            "meta":{
+                "title": "Calvin Klein Reveal EDP | Lilly Drogerie",
+                "keywords": "парфюм, женски, аромат, Calvin, Reveal, нежен парфюм",
+                "description": "Calvin Klein Reveal излиза през септември 2014г. Reveal е..."
+            }
         },
         {
             "id":13,
-            "name": " La Rive Swarovski",
+            "name": "La Rive Swarovski",
             "thumbnail":"/img/gallery/products/parfume-women-3.jpg",
             "imgSrc":"/img/gallery/products/parfume-women-3.jpg",
             "price": "58.80",
@@ -58,7 +68,12 @@
                     "name":"Марка",
                     "measure":" La Rivе"
                 }
-            ]
+            ],
+            "meta":{
+                "title": "La Rive Swarovski | Lilly Drogerie",
+                "keywords": "Парфюмна вода, женски, аромат, Rive, Swarovski, нежен парфюм",
+                "description": "Парфюмна вода за жени La Rive Swarovski"
+            }
         }
     ],
     "meta":{
