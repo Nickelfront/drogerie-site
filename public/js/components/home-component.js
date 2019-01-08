@@ -5,7 +5,7 @@ export class HomeComponent extends Component {
         this.router = router;
         this.meta = {
             title: "Начало | Lilly Drogerie",
-            keywords: "козметика, дамски превръзки",
+            keywords: "козметика, грим, красота, натурална козметика, декоративна козметика, грижа, лична грижа, грижа за кожата, грижа за лице, грижа за косата, почистване, почистващи продукти",
             description: "Сайт, от който няма да останете разочаровани, всичко за вашата кожа...",
             download_catalogue: "/pdf/catalogue.pdf"
         };
